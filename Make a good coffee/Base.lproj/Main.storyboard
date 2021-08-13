@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,292 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Make_a_good_coffee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="N2j-7I-xSj">
+                                <rect key="frame" x="20" y="54" width="374" height="310"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxf-x0-nfL">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.29019607843137252" green="0.22352941176470587" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="mkf-vK-0w9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="23"/>
+                                        <state key="normal" title="Select  Your  Coffee">
+                                            <color key="titleColor" red="0.98039215686274506" green="0.95294117647058818" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="SelectCoffeePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y6e-Bv-lTh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqI-DU-atF">
+                                        <rect key="frame" x="0.0" y="52" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.52549019607843139" green="0.32941176470588235" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="sqL-pa-Kbj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="23"/>
+                                        <state key="normal" title="Mocha">
+                                            <color key="titleColor" red="0.98039215690000003" green="0.95294117649999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="CoffeePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QQb-fb-EV0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhE-ro-a7m">
+                                        <rect key="frame" x="0.0" y="104" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.52549019607843139" green="0.32941176470588235" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="qPK-Nu-kZH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="23"/>
+                                        <state key="normal" title="Flat White">
+                                            <color key="titleColor" red="0.98039215690000003" green="0.95294117649999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="CoffeePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="63g-Rt-8sO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNN-ax-TSy">
+                                        <rect key="frame" x="0.0" y="156" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.52549019607843139" green="0.32941176470588235" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="5tx-7R-HEw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="23"/>
+                                        <state key="normal" title="Espresso">
+                                            <color key="titleColor" red="0.98039215690000003" green="0.95294117649999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="CoffeePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cvb-Je-X5c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hj2-yf-J4t">
+                                        <rect key="frame" x="0.0" y="208" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.52549019607843139" green="0.32941176470588235" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="eoR-aI-tJj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="23"/>
+                                        <state key="normal" title="Latte">
+                                            <color key="titleColor" red="0.98039215690000003" green="0.95294117649999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="CoffeePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FCB-1m-WhP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juv-z2-9SV">
+                                        <rect key="frame" x="0.0" y="260" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.52549019607843139" green="0.32941176470588235" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="RpZ-by-Xci"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="23"/>
+                                        <state key="normal" title="Cappuccino">
+                                            <color key="titleColor" red="0.98039215690000003" green="0.95294117649999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="CoffeePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t8O-OD-x4b"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Lxf-x0-nfL" firstAttribute="leading" secondItem="N2j-7I-xSj" secondAttribute="leading" id="574-wu-GNH"/>
+                                    <constraint firstItem="cqI-DU-atF" firstAttribute="leading" secondItem="N2j-7I-xSj" secondAttribute="leading" id="D6s-Im-MUZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="juv-z2-9SV" secondAttribute="trailing" id="Hnb-VX-8N7"/>
+                                    <constraint firstAttribute="trailing" secondItem="hj2-yf-J4t" secondAttribute="trailing" id="W2K-sV-BPc"/>
+                                    <constraint firstAttribute="trailing" secondItem="PhE-ro-a7m" secondAttribute="trailing" id="WFD-8u-jaS"/>
+                                    <constraint firstAttribute="trailing" secondItem="BNN-ax-TSy" secondAttribute="trailing" id="eUP-zG-cNU"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lxf-x0-nfL" secondAttribute="trailing" id="jad-tY-jNi"/>
+                                    <constraint firstItem="PhE-ro-a7m" firstAttribute="leading" secondItem="N2j-7I-xSj" secondAttribute="leading" id="nvc-dN-UhX"/>
+                                    <constraint firstAttribute="trailing" secondItem="cqI-DU-atF" secondAttribute="trailing" id="tNs-Si-8Nu"/>
+                                    <constraint firstItem="hj2-yf-J4t" firstAttribute="leading" secondItem="N2j-7I-xSj" secondAttribute="leading" id="tV7-p3-Af0"/>
+                                    <constraint firstItem="BNN-ax-TSy" firstAttribute="leading" secondItem="N2j-7I-xSj" secondAttribute="leading" id="x2L-Ps-vsv"/>
+                                    <constraint firstItem="juv-z2-9SV" firstAttribute="leading" secondItem="N2j-7I-xSj" secondAttribute="leading" id="xHu-i7-DLa"/>
+                                </constraints>
+                            </stackView>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="rQE-UI-4ee">
+                                <rect key="frame" x="150" y="464" width="100" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="LIY-mG-xcr"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="CoffeeStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="z5N-2n-fBB"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xe4-Ac-lvt">
+                                <rect key="frame" x="50" y="464" width="70" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="1bO-Tq-eQr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="23"/>
+                                <color key="textColor" red="0.5271114706993103" green="0.32962140440940857" blue="0.21772864460945129" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TxJ-Q6-Bra">
+                                <rect key="frame" x="270" y="464" width="30.5" height="28"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="23"/>
+                                <color key="textColor" red="0.5271114706993103" green="0.32962140440940857" blue="0.21772864460945129" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKH-KI-Z1m">
+                                <rect key="frame" x="326" y="464" width="38" height="28"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="23"/>
+                                <color key="textColor" red="0.5271114706993103" green="0.32962140440940857" blue="0.21772864460945129" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CM6-ye-fDt">
+                                <rect key="frame" x="80" y="409" width="254" height="30"/>
+                                <color key="backgroundColor" red="0.52711147069999997" green="0.32962140439999998" blue="0.21772864459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Tgc-un-OA7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="23"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.95294117649999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0M-y8-ha8">
+                                <rect key="frame" x="80" y="526" width="254" height="50"/>
+                                <color key="backgroundColor" red="0.2040584087" green="0.1724820896" blue="0.1832861855" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PQg-pW-fEP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="23"/>
+                                <state key="normal" title="Make Coffee">
+                                    <color key="titleColor" red="0.98039215690000003" green="0.95294117649999999" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="MakeCoffeePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZPQ-8N-es2"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="2tj-eE-dYd">
+                                <rect key="frame" x="40" y="626" width="334" height="6"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="dLi-iY-f6H"/>
+                                </constraints>
+                                <color key="progressTintColor" red="0.52711147069999997" green="0.32962140439999998" blue="0.21772864459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZU-RW-JHG">
+                                <rect key="frame" x="30" y="661" width="354" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="BBp-kL-7kG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="23"/>
+                                <color key="textColor" red="0.52549019610000003" green="0.3294117647" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steamed Milk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uh-jJ-orY">
+                                <rect key="frame" x="50" y="751" width="124" height="28"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="23"/>
+                                <color key="textColor" red="0.52711147069999997" green="0.32962140439999998" blue="0.21772864459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hot Chololate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFU-r2-QDg">
+                                <rect key="frame" x="50" y="809" width="123" height="28"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="23"/>
+                                <color key="textColor" red="0.52711147069999997" green="0.32962140439999998" blue="0.21772864459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Milk Foam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrH-G5-oJ2">
+                                <rect key="frame" x="50" y="867" width="93" height="28"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="23"/>
+                                <color key="textColor" red="0.52711147069999997" green="0.32962140439999998" blue="0.21772864459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Milk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcQ-Qu-xh2">
+                                <rect key="frame" x="204" y="751" width="190" height="28"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="23"/>
+                                <color key="textColor" red="0.52549019610000003" green="0.3294117647" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chocolate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehJ-75-QgW">
+                                <rect key="frame" x="203" y="809" width="191" height="28"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="23"/>
+                                <color key="textColor" red="0.52549019610000003" green="0.3294117647" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfR-38-dsr">
+                                <rect key="frame" x="203" y="867" width="191" height="28"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="23"/>
+                                <color key="textColor" red="0.52549019610000003" green="0.3294117647" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dFU-r2-QDg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="04w-mx-ff1"/>
+                            <constraint firstItem="qrH-G5-oJ2" firstAttribute="top" secondItem="dFU-r2-QDg" secondAttribute="bottom" constant="30" id="06Q-mr-Wfu"/>
+                            <constraint firstItem="qrH-G5-oJ2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="1fs-wB-boH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ehJ-75-QgW" secondAttribute="trailing" constant="20" id="1up-J3-e3N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N2j-7I-xSj" secondAttribute="trailing" constant="20" id="2Vd-Gw-DK8"/>
+                            <constraint firstItem="ehJ-75-QgW" firstAttribute="leading" secondItem="dFU-r2-QDg" secondAttribute="trailing" constant="30" id="6Jj-MJ-Mpu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CM6-ye-fDt" secondAttribute="trailing" constant="80" id="6bg-rS-pus"/>
+                            <constraint firstItem="2tj-eE-dYd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="6mm-9t-LsU"/>
+                            <constraint firstItem="dFU-r2-QDg" firstAttribute="top" secondItem="3uh-jJ-orY" secondAttribute="bottom" constant="30" id="A8J-z1-ayZ"/>
+                            <constraint firstItem="TxJ-Q6-Bra" firstAttribute="top" secondItem="N2j-7I-xSj" secondAttribute="bottom" constant="100" id="BgX-jR-iQm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pcQ-Qu-xh2" secondAttribute="trailing" constant="20" id="CIy-0E-efg"/>
+                            <constraint firstItem="ehJ-75-QgW" firstAttribute="top" secondItem="pcQ-Qu-xh2" secondAttribute="bottom" constant="30" id="CYU-fG-iOc"/>
+                            <constraint firstItem="xZU-RW-JHG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Cr0-N1-ZxW"/>
+                            <constraint firstItem="K0M-y8-ha8" firstAttribute="top" secondItem="rQE-UI-4ee" secondAttribute="bottom" constant="30" id="ER5-JB-7vc"/>
+                            <constraint firstItem="CM6-ye-fDt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="Gok-Ti-wo9"/>
+                            <constraint firstItem="TxJ-Q6-Bra" firstAttribute="leading" secondItem="Xe4-Ac-lvt" secondAttribute="trailing" constant="150" id="HFz-WF-KXy"/>
+                            <constraint firstItem="N2j-7I-xSj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="LTN-Vf-dD3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2tj-eE-dYd" secondAttribute="trailing" constant="20" id="OMw-9p-RDC"/>
+                            <constraint firstItem="xZU-RW-JHG" firstAttribute="top" secondItem="2tj-eE-dYd" secondAttribute="bottom" constant="30" id="QVa-1j-Dvb"/>
+                            <constraint firstItem="N2j-7I-xSj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Scg-CF-4hH"/>
+                            <constraint firstItem="CfR-38-dsr" firstAttribute="leading" secondItem="qrH-G5-oJ2" secondAttribute="trailing" constant="60" id="VmU-SL-Zx5"/>
+                            <constraint firstItem="dKH-KI-Z1m" firstAttribute="top" secondItem="N2j-7I-xSj" secondAttribute="bottom" constant="100" id="Wam-Le-ZKr"/>
+                            <constraint firstAttribute="trailing" secondItem="CfR-38-dsr" secondAttribute="trailing" constant="20" id="Wd3-30-WJ1"/>
+                            <constraint firstItem="pcQ-Qu-xh2" firstAttribute="leading" secondItem="3uh-jJ-orY" secondAttribute="trailing" constant="30" id="YEh-aW-Xke"/>
+                            <constraint firstItem="K0M-y8-ha8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="Ydr-Y4-bLg"/>
+                            <constraint firstItem="CM6-ye-fDt" firstAttribute="top" secondItem="N2j-7I-xSj" secondAttribute="bottom" constant="45" id="Z2b-md-paS"/>
+                            <constraint firstAttribute="trailing" secondItem="qrH-G5-oJ2" secondAttribute="trailing" constant="271" id="Z5a-wc-e8v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K0M-y8-ha8" secondAttribute="trailing" constant="80" id="cf9-7n-tlC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dKH-KI-Z1m" secondAttribute="trailing" constant="50" id="cqN-gQ-Q4r"/>
+                            <constraint firstItem="rQE-UI-4ee" firstAttribute="top" secondItem="N2j-7I-xSj" secondAttribute="bottom" constant="100" id="ewX-7u-UUi"/>
+                            <constraint firstItem="2tj-eE-dYd" firstAttribute="top" secondItem="K0M-y8-ha8" secondAttribute="bottom" constant="50" id="fqo-12-Oo0"/>
+                            <constraint firstItem="N2j-7I-xSj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="hP5-c1-kdz"/>
+                            <constraint firstItem="CfR-38-dsr" firstAttribute="top" secondItem="ehJ-75-QgW" secondAttribute="bottom" constant="30" id="ko3-ip-0f1"/>
+                            <constraint firstItem="pcQ-Qu-xh2" firstAttribute="top" secondItem="xZU-RW-JHG" secondAttribute="bottom" constant="70" id="lCb-dB-A5J"/>
+                            <constraint firstItem="3uh-jJ-orY" firstAttribute="top" secondItem="xZU-RW-JHG" secondAttribute="bottom" constant="70" id="o3P-2z-c4A"/>
+                            <constraint firstItem="Xe4-Ac-lvt" firstAttribute="top" secondItem="N2j-7I-xSj" secondAttribute="bottom" constant="100" id="qbN-Ch-hHh"/>
+                            <constraint firstItem="3uh-jJ-orY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="vV8-k2-3F8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xZU-RW-JHG" secondAttribute="trailing" constant="30" id="vtE-GU-r6p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3uh-jJ-orY" secondAttribute="trailing" constant="240" id="vtg-4V-GXk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dFU-r2-QDg" secondAttribute="trailing" constant="241" id="yMW-hG-8HU"/>
+                            <constraint firstItem="rQE-UI-4ee" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="yvl-Xs-s2U"/>
+                            <constraint firstItem="Xe4-Ac-lvt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="zrw-12-LOY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="Chocolate_Label" destination="ehJ-75-QgW" id="jcE-Jb-Eyx"/>
+                        <outlet property="CoffeeChoiceLabel" destination="CM6-ye-fDt" id="jna-vV-2Th"/>
+                        <outlet property="Foam_Label" destination="CfR-38-dsr" id="1Ax-W8-5oC"/>
+                        <outlet property="HotChocolate" destination="dFU-r2-QDg" id="szg-04-KTS"/>
+                        <outlet property="MakeCoffeeBtn" destination="K0M-y8-ha8" id="dpj-s4-b9u"/>
+                        <outlet property="MilkFoam" destination="qrH-G5-oJ2" id="WhA-a8-UXr"/>
+                        <outlet property="Milk_Label" destination="pcQ-Qu-xh2" id="Zmm-TC-dyB"/>
+                        <outlet property="SelectCoffeeBtn" destination="Lxf-x0-nfL" id="4fO-r5-VdS"/>
+                        <outlet property="SteamMilk" destination="3uh-jJ-orY" id="w02-jr-HL7"/>
+                        <outlet property="TimerBar" destination="2tj-eE-dYd" id="tZT-2s-WvB"/>
+                        <outlet property="gramLabel" destination="TxJ-Q6-Bra" id="aDM-jw-x8D"/>
+                        <outlet property="show_second_label" destination="xZU-RW-JHG" id="ral-pa-YS8"/>
+                        <outletCollection property="CoffeeBtnCollection" destination="cqI-DU-atF" collectionClass="NSMutableArray" id="ah6-Om-bTp"/>
+                        <outletCollection property="CoffeeBtnCollection" destination="PhE-ro-a7m" collectionClass="NSMutableArray" id="2GF-9L-zO4"/>
+                        <outletCollection property="CoffeeBtnCollection" destination="BNN-ax-TSy" collectionClass="NSMutableArray" id="r0m-v1-CDR"/>
+                        <outletCollection property="CoffeeBtnCollection" destination="hj2-yf-J4t" collectionClass="NSMutableArray" id="REO-5q-7lx"/>
+                        <outletCollection property="CoffeeBtnCollection" destination="juv-z2-9SV" collectionClass="NSMutableArray" id="lCv-pt-oeR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
         </scene>
     </scenes>
 </document>
