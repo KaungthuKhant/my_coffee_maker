@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     // variables
     var coffee_gram = 0.0
     var brewing_time = 0 // 4 min to brew coffee
-    var time_to_brew = 5
+    var time_to_brew = 180
     var coffee_timer = Timer()
     var coffee_of_choice = "" // use this variable for when user choose something
     var num_gram = 0 // amount of coffee in gram that user selected
